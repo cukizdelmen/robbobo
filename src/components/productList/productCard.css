@@ -1,0 +1,122 @@
+.cardSpace {
+  background: white;
+  border-radius: 8px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
+  transition: transform 0.2s ease;
+  position: relative;
+
+  /* 🔥 FIX STARTS HERE */
+  height: auto; /* let the card define its own height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* content grows naturally */
+  align-items: stretch; /* allow full width */
+}
+
+.cardSpace {
+  display: inline-block; /* 👈 necessary for column layout */
+  width: 100%;
+  margin-bottom: 1rem;
+  break-inside: avoid; /* 👈 prevents cards from breaking between columns */
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
+  transition: transform 0.2s ease;
+}
+
+.productImage {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.CardContent {
+  padding: 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.productTitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.qty-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.stock {
+  background-color: greenyellow;
+  width: fit-content;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+}
+
+.Category {
+  border-radius: 5px;
+  padding: 0.3rem 0.5rem;
+  width: fit-content;
+  position: absolute;
+  top: 10;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-weight: bold;
+}
+
+.cardSpace:hover {
+  transform: translateY(-5px);
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.3rem 1rem;
+  background-color: aqua;
+  flex: 1;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.remove {
+  background-color: red;
+}
+
+.remove:hover {
+  background: #be0f02;
+}
+
+.edit:hover {
+  background: rgb(1, 133, 133);
+}

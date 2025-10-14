@@ -1,0 +1,67 @@
+.headercontainer{
+    display: flex;
+    align-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+    /* padding: 0rem 1rem; */
+}
+
+.searchContainer {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: fit-content;
+  gap: 0.5rem;
+}
+
+input {
+  width: 300px;
+  outline: none;
+  border: none;
+}
+
+.profile{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.profileImage {
+  border-radius: 50px;
+  aspect-ratio: 1;
+}
+
+.profileDesc span{
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.notification{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.bell{
+    font-size: 2.3rem;
+}
+
+.count{
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    border-radius: 100%;
+    border: none;
+    position: absolute;
+    top: 9;
+    right: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+}

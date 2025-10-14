@@ -1,0 +1,65 @@
+.container {
+  background-color: #6a88a5;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 1rem 0rem;
+  flex-direction: column;
+  position: fixed;
+  width: 17%;
+  bottom: 10;
+  top: 10;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.logoName {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.linkItem {
+  width: 100%;
+  display: flex;
+  transition: 0.5s ease-in-out;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.linkItem:hover {
+  background-color: #ffffff91;
+}
+
+.row {
+  display: flex;
+  gap: 0.8rem;
+  padding: 0.5rem;
+  margin-left: 2rem;
+  color: white;
+  font-size: 1.2rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logout {
+  color: rgb(179, 4, 4);
+  font-size: 1.4rem;
+  font-weight: bold;
+}

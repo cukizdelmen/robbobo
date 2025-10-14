@@ -1,0 +1,169 @@
+.orderContainer {
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  padding: 0;
+}
+
+table {
+  margin-top: 1rem;
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+th,
+td {
+  padding: 0.5rem;
+  text-align: left;
+  background-color: #dbdbdbcb;
+  border-bottom: 1px solid #64646479;
+}
+
+.th {
+  background-color: #fff;
+}
+
+.tablehead {
+  background-color: #fff;
+}
+.pending {
+  background-color: rgb(30, 75, 0);
+  color: rgb(255, 255, 255);
+  padding: 0.2rem 0.3rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.tableTitle {
+  border-radius: 10px;
+}
+
+.thead {
+  background-color: rgb(46, 55, 63);
+  padding: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background-color: #6a88a5;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.btn-order {
+  background-color: green;
+  padding: 3px 16px;
+  margin-right: 10px;
+  border-radius: 50px;
+  color: white;
+}
+
+.tableId {
+  padding: 0;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+/* ===== Modal Overlay & Base ===== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content {
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  padding: 2rem;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  animation: slideUp 0.3s ease-in-out;
+  overflow-y: auto;
+  max-height: 85vh;
+}
+
+/* Close Button */
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.modal-close:hover {
+  color: #000;
+}
+
+/* ===== Items Grid ===== */
+.order-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.order-item-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 0.5rem;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.order-item-image {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.order-item-info h4 {
+  font-size: 14px;
+  margin: 6px 0 4px;
+}
+
+.order-item-info p {
+  font-size: 13px;
+  color: #555;
+  margin: 2px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

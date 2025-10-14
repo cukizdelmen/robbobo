@@ -1,0 +1,275 @@
+.OrderPageContainer {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.sidebarComponent {
+  width: 20%;
+  padding: 1rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-right: 1rem; */
+}
+
+.ProductsView {
+  flex: 1;
+  padding-bottom: 1rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.searchContainer {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: fit-content;
+  gap: 0.5rem;
+}
+
+.input {
+  width: 300px;
+  outline: none;
+  border: none;
+}
+
+.productListSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  align-items: start; /* 👈 this line fixes the equal-height issue */
+}
+
+.modal {
+  position: absolute;
+  right: 16px;
+  left: 10px;
+  bottom: 10px;
+  top: 70px;
+  overflow-y: auto;
+  background-color: rgb(231, 229, 229);
+  border-radius: 10px;
+}
+
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
+.modal {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.addProduct {
+  position: absolute;
+  right: 16px;
+  left: 10px;
+  bottom: 10px;
+  top: 70px;
+
+  overflow-y: auto;
+  background-color: rgb(231, 229, 229);
+  border-radius: 10px;
+}
+
+.addProduct::-webkit-scrollbar {
+  display: none;
+}
+
+.addProduct {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.closeBtn {
+  font-size: 2.5rem;
+  transition: 0.2s ease-in-out;
+  float: right;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+.closeBtn:hover {
+  color: rgba(0, 0, 0, 0.521);
+}
+
+.editTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.form {
+  padding: 1rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.editContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+.formgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.formgroup label {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.formgroup .input {
+  background-color: white;
+  width: 90%;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+}
+.formgroup select {
+  background-color: white;
+  width: 90%;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  outline: none;
+}
+
+.formgroup .input:focus {
+  border: 1px solid black;
+}
+.formgroup select:focus {
+  border: 1px solid black;
+}
+
+.formgroup textarea {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  outline: none;
+  min-height: 10rem;
+  width: 90%;
+}
+
+.mt {
+  margin-top: 1.3rem;
+}
+
+.SaveBtn {
+  background-color: rgb(25, 54, 221);
+  padding: 0.5rem;
+  width: 20%;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.editHead {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1rem;
+  align-items: center;
+}
+
+.editHead button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: blue;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.editHead button:hover {
+  background-color: rgba(0, 0, 255, 0.548);
+}
+
+.Circleinput {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: white;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.imageInput {
+  margin-bottom: 2rem;
+}
+
+.myMasonryGrid {
+  display: flex;
+  margin-left: -1rem; /* gutter size offset */
+  width: auto;
+}
+
+.myMasonryGridColumn {
+  padding-left: 1rem; /* gutter size */
+  background-clip: padding-box;
+}
+
+.myMasonryGridColumn > * {
+  margin-bottom: 1rem;
+}
+
+.imageInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.imagePreview {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #f3f3f3;
+  border: 2px dashed #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.imagePreview:hover {
+  border-color: #00bcd4;
+  background-color: #e0f7fa;
+}
+
+.previewImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholderText {
+  font-size: 3rem;
+  color: #aaa;
+}
+
+.hiddenInput {
+  display: none;
+}

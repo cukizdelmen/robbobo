@@ -1,0 +1,71 @@
+.task {
+  color: rgb(0, 0, 0);
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.taskContent {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.accordion {
+  height: 0;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.accordion.open {
+  padding: 0.5rem;
+  height: auto;
+}
+
+.taskName {
+  color: rgb(0, 0, 0);
+  font-size: 1.1rem;
+}
+
+.task select option {
+  outline: none;
+}
+
+.Pending {
+  background-color: greenyellow;
+  border-radius: 10px;
+  padding: 0.2rem;
+  outline: none;
+  padding: 0.2rem 0.4rem;
+}
+
+.completed {
+  background-color: rgb(61, 99, 4);
+  border-radius: 10px;
+  padding: 0.2rem;
+  outline: none;
+  padding: 0.2rem 0.4rem;
+}
+
+.delAction {
+  position: relative;
+}
+
+.delBox {
+  position: absolute;
+  background-color: yellow;
+  width: 100px;
+  height: 30px;
+  padding: 0 2rem;
+  border-bottom: 2px solid white;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  border-radius: 5px;
+}
