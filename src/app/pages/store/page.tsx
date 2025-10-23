@@ -1,6 +1,5 @@
 "use client";
 
-import Sidebar from "@/components/sidebar/sidebar";
 import ProductCard from "@/components/productList/productCard";
 import styles from "./store.module.css";
 import { FiSearch } from "react-icons/fi";
@@ -92,30 +91,14 @@ const Store = () => {
 
   return (
     <main className={styles.OrderPageContainer}>
-      <div className={styles.sidebarComponent}>
-        <Sidebar />
-      </div>
       <div className={styles.ProductsView}>
         <div className={styles.editHead}>
-          <div className={styles.searchContainer}>
-            <FiSearch />
-            <input type="search" placeholder="Search Here" />
-          </div>
-
           <button onClick={openProductModal}>
             <IoMdAddCircleOutline />
             Add Product
           </button>
         </div>
         <div className={styles.productListSection}>
-          {/* {products.map((product) => (
-            <ProductCard
-              key={product.id}
-              onEdit={() => openEditModal(product)}
-              product={product}
-            />
-          ))} */}
-
           <Masonry
             breakpointCols={breakpointColumnsObj}
             className={styles.myMasonryGrid}

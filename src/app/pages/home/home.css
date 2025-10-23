@@ -1,0 +1,50 @@
+:root {
+  /* Primary Palette */
+  --color-primary: #010d2cff;
+  --color-bg: #0539bbc2;
+  --color-bg-w: #0539bb79;
+  --color-secondary: #292927ff;
+
+  /* Neutrals */
+  --color-faint: #818181ff;
+  --color-fainte: #9b999934;
+  --color-faint-black: #0000009f;
+  --color-black: #000000;
+  --color-white: #ffffffff;
+  --color-faint-white: #ffffff91;
+
+  /* Accent/Utility */
+  --color-note: #fff159ff;
+  --color-red: #ff2600e0;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.page {
+  background-color: var(--color-bg-w);
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.actions {
+  flex: 2;
+}
+
+.addon {
+  flex: 1;
+}
+
+.addon-Items-container {
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+}

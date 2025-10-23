@@ -33,15 +33,6 @@ const Card = () => {
   return (
     <div className="cardContainer">
       <div className="card">
-        <span className="cardTitle">Total Orders</span>
-        <div className="cardRow">
-          <span className="CardDigit">{stats.totalOrders}</span>
-          <div className="cardIconBox">
-            <BsPersonWorkspace className="cardIcon" />
-          </div>
-        </div>
-      </div>
-      <div className="card">
         <span className="cardTitle">Total Products</span>
         <div className="cardRow">
           <span className="CardDigit">{stats.totalProducts}</span>
@@ -50,6 +41,16 @@ const Card = () => {
           </div>
         </div>
       </div>
+      <div className="card">
+        <span className="cardTitle">Total Orders</span>
+        <div className="cardRow">
+          <span className="CardDigit">{stats.totalOrders}</span>
+          <div className="cardIconBox">
+            <BsPersonWorkspace className="cardIcon" />
+          </div>
+        </div>
+      </div>
+
       <div className="card">
         <span className="cardTitle">Active Orders</span>
         <div className="cardRow">

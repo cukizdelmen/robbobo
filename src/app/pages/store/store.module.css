@@ -1,6 +1,24 @@
+:root {
+  /* Primary Palette */
+  --color-primary: #010d2cff;
+  --color-bg: #0539bbc2;
+  --color-secondary: #292927ff;
+
+  /* Neutrals */
+  --color-faint: #818181ff;
+  --color-fainte: #9b999934;
+  --color-faint-black: #0000009f;
+  --color-black: #000000;
+  --color-white: #ffffffff;
+  --color-faint-white: #ffffff91;
+
+  /* Accent/Utility */
+  --color-note: #fff159ff;
+  --color-red: #ff2600e0;
+}
+
 .OrderPageContainer {
   min-height: 100vh;
-  width: 100%;
   display: flex;
 }
 
@@ -181,21 +199,20 @@
 
 .editHead {
   display: flex;
-  justify-content: space-between;
-  padding-right: 1rem;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .editHead button {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: blue;
+  background-color: var(--color-bg);
   padding: 0.5rem 1rem;
   color: white;
   font-size: 1.2rem;
   font-weight: bold;
   border-radius: 5px;
+  margin-left: auto;
 }
 
 .editHead button:hover {

@@ -17,56 +17,56 @@ const Sidebar = () => {
     <div className="container">
       <div className="logo">
         <Image src={logobit} width={50} height={50} alt="Image description" />
-        <span className="logoName">Robbobo</span>
       </div>
       <ul className="links">
+        {/*  */}
         <li className="linkItem">
           <a href="/pages/home" className="row">
-            <TbLayoutDashboardFilled /> Home
+            <TbLayoutDashboardFilled />
           </a>
         </li>
+        {/*  */}
         <li className="linkItem">
           <Link href="/pages/store" className="row">
             <IoBagHandleSharp className="icon" />
-            Store
           </Link>
         </li>
+        {/*  */}
         <li className="linkItem">
           <Link href="/pages/category" className="row">
             <IoBagHandleSharp className="icon" />
-            Categories
           </Link>
         </li>
+        {/*  */}
         <li className="linkItem">
           <Link href="/pages/users" className="row">
             <GrGroup />
-            Users
           </Link>
         </li>
+        {/*  */}
         <li className="linkItem">
           <Link href="/pages/orders" className="row">
             <FaCartArrowDown />
-            Orders
           </Link>
         </li>
+        {/*  */}
         <li className="linkItem">
           <Link href="/pages/orders" className="row">
             <SiImessage />
-            Messages
           </Link>
         </li>
+        {/*  */}
         <li className="linkItem">
           <Link href="/pages/banner" className="row">
             <Flag />
-            Banner
           </Link>
         </li>
+        {/*  */}
       </ul>
       <ul className="links">
         <li onClick={logout} className="linkItem">
           <div className="row logout">
             <TbLogout2 />
-            Logout
           </div>
         </li>
       </ul>

@@ -1,7 +1,4 @@
 "use client";
-
-import SearchBar from "@/components/header/header";
-import Sidebar from "../../../components/sidebar/sidebar";
 import Card from "@/components/Cards/card";
 
 import Image from "next/image";
@@ -10,6 +7,7 @@ import { BiAddToQueue } from "react-icons/bi";
 import Task from "@/components/taskbody/taskBody";
 import { useData } from "@/Providers/dataProvider";
 import { useEffect, useState } from "react";
+import "./home.css";
 
 export default function Home() {
   const { orders, fetchOrders, loading, fetchOrderStats } = useData();
@@ -37,15 +35,9 @@ export default function Home() {
 
   return (
     <main className="main">
-      {/* ist component */}
-      <div className="sidebar">
-        <Sidebar />
-      </div>
-      {/* second component */}
-      <div className="mainView">
-        <SearchBar />
-        <div className="overview"></div>
+      {/* <div className="mainView">
         <Card />
+        <div className="overview"></div>
         <div>
           <h2 className="text-2xl font-bold mb-4">Recent Orders</h2>
 
@@ -87,7 +79,6 @@ export default function Home() {
           )}
         </div>
       </div>
-      {/* third componment */}
       <div className="board">
         <div className="profileShowcase">
           <div className="overlay"></div>
@@ -112,6 +103,15 @@ export default function Home() {
             <Task />
             <Task />
           </div>
+        </div>
+      </div> */}
+
+      <div className="page">
+        <div className="actions">
+          <Card />
+        </div>
+        <div className="addon">
+          <div className="addon-Items-container"></div>
         </div>
       </div>
     </main>
